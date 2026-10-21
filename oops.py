@@ -93,3 +93,24 @@ account.deposit(500)
 print(account.get_balance())  # Output: 1500
 # print(account.__balance)    # Error: 'BankAccount' object has no attribute '__balance'
 
+
+#polymorphism
+class Duck:
+    def make_sound(self):
+        return "Quack"
+
+class Person:
+    def make_sound(self):
+        return "Hello"
+
+def animal_sound(creature):
+    print(creature.make_sound())
+
+# Both objects have a make_sound method
+animal_sound(Duck())    # Output: Quack
+animal_sound(Person())  # Output: Hello
+
+
+
+print("Thank You For Recall")
+
