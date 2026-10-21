@@ -20,3 +20,12 @@ count = 0
 while count < 3:
     print(f"Count is {count}")
     count += 1
+
+
+
+def calculate_area(length, width):
+    return length * width
+
+# Calling the function
+area = calculate_area(5, 3)
+print(f"Area: {area}")
