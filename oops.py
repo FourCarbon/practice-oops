@@ -3,3 +3,20 @@ name = "Alice"          # String (str)
 age = 25                # Integer (int)
 height = 5.6            # Float (float)
 is_student = True       # Boolean (bool)
+
+# Conditional statements (adult or minor)
+if age >= 18:
+    print(f"{name} is an adult.")
+else:
+    print(f"{name} is a minor.")
+
+# For loop
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+# While loop
+count = 0
+while count < 3:
+    print(f"Count is {count}")
+    count += 1
