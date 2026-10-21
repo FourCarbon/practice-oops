@@ -46,5 +46,26 @@ class Dog:
 dog1 = Dog("Buddy", "Golden Retriever")
 dog2 = Dog("Max", "German Shepherd")
 
+
+
+#inheritance
+
+# Parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement abstract method")
+
+# Child class inheriting from Animal
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says Meow!"
+
+# Using the child class
+my_cat = Cat("Whiskers")
+print(my_cat.speak())  # Output: Whiskers says Meow!
+
 print(dog1.bark())  # Output: Buddy says Woof!
 print(dog2.breed)   # Output: German Shepherd
